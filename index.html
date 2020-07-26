@@ -20,19 +20,16 @@
 					<p>In this article we will see how to use machine learning to predict which passengers survived the Titanic shipwreck. You can see the code in further details on the <a href="https://github.com/eduardodsaraujo/TitanicMachineLearningFromDisaster/blob/master/Kaggle%20Competition%20-%20Titanic%20Machine%20Learning%20from%20Disaster.ipynb">link</a>.</p>
 					<p>It is a <a href="https://www.kaggle.com/c/titanic">Kaggle competition</a>, where we can access to two similar datasets that include passenger information like name, age, gender, socio-economic class, etc. Based on the patterns found in the train.csv data, the goal is to predict whether the other 418 passengers on board (found in test.csv) survived.</p>
 					<p>We can also look at the dataset and try answer some questions about it, like:</p>
-
 						<ol>
 							<li>
 							How many people survived in this accident? </li>
 							<li>How many of them were male?</li>
 							<li> Was the ticket class a significant factor in the passenger&#39;s survival?</li>
 						</ol>
-					<p>First of all, we needed to import some libraries, to do the analysis and build our model.
-					<span><img class=" mt-2 img-responsive img-fluid" alt="" src="images/image3.png" title=""></span>
 				</section>
 				
 				<section class="mt-4">
-					<p>Then, we load the datasets and see the first rows of the train dataset.</p>
+					<p>First of all, we needed to import some libraries, like <a href="https://pandas.pydata.org/">Pandas</a> and <a href="https://numpy.org/">Numpy</a>, for data analysis and manipulation, and <a href="https://scikit-learn.org/stable/">Scikit Learn</a>, for the machine learning process. Then, we load the datasets and see the first rows of the train dataset.</p>
 					<span><img class="img-responsive img-fluid" alt="" src="images/image5.png" title=""></span>
 					<p>In this dataset there are 891 rows and 12 columns, where the information about every columns can be seen below:</p>
 					<span><img class="img-responsive img-fluid" alt="" src="images/image4.png" title=""></span>
@@ -85,7 +82,7 @@
 				</section>
 				
 				<section  class="mt-2">
-					<h3>Reflection and Improvements</h3>
+					<h3>Results and Improvements</h3>
 					<p>We observed the Titanic data and made some observations about the information of the passengers of this accident. It's interesting that the ship had more men passengers then women passengers, but the number of women that survived is more than the double of the number of men that survived. It is also interesting see how the class of the trip was also a determining factor to discover if a person died or not.</p>
 
 					<p>We created a machine learning model that predicts if a passenger survived or not to the Titanic. I submitted the submission file to Kaggles's competition and I obtained 0.7799 of accuracy. It was a good result for a first attempt.</p>
