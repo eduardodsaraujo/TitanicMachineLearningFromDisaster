@@ -17,8 +17,8 @@
 				
 				
 				<section class="mt-4">
-					<p>In this article we will see how to use machine learning to predict which passengers survived the Titanic shipwreck. You can see the code in further details on the link.</p>
-					<p>It is a Kaggle competition, where we can access to two similar datasets that include passenger information like name, age, gender, socio-economic class, etc. Based on the patterns found in the train.csv data, the goal is to predict whether the other 418 passengers on board (found in test.csv) survived.</p>
+					<p>In this article we will see how to use machine learning to predict which passengers survived the Titanic shipwreck. You can see the code in further details on the <a href="https://github.com/eduardodsaraujo/TitanicMachineLearningFromDisaster/blob/master/Kaggle%20Competition%20-%20Titanic%20Machine%20Learning%20from%20Disaster.ipynb">link</a>.</p>
+					<p>It is a <a href="https://www.kaggle.com/c/titanic">Kaggle competition</a>, where we can access to two similar datasets that include passenger information like name, age, gender, socio-economic class, etc. Based on the patterns found in the train.csv data, the goal is to predict whether the other 418 passengers on board (found in test.csv) survived.</p>
 					<p>We can also look at the dataset and try answer some questions about it, like: - How many people survived in this accident? How many of them were male? Was the ticket class a significant factor in the passenger&#39;s survival?</p>
 					<p>First of all, we needed to import some libraries, to do the analysis and build our model.
 					<span><img class=" mt-2 img-responsive img-fluid" alt="" src="images/image3.png" title=""></span>
@@ -73,8 +73,10 @@
 					<p>We observed the Titanic data and made some observations about the information of the passengers of this accident. It's interesting that the ship had more men passengers then women passengers, but the number of women that survived is more than the double of the number of men that survived. It is also interesting see how the class of the trip was also a determining factor to discover if a person died or not.</p>
 
 					<p>We created a machine learning model that predicts if a passenger survived or not to the Titanic. I submitted the submission file to Kaggles's competition and I obtained 0.7799 of accuracy. It was a good result for a first attempt.</p>
-					<p>For improvements it could be used other hyperparams in the classifiers, tested other classifiers, use some neural network, or make use of ensemble methods. What I did here was use another strategy, that is the use a Feature Selector method, the Exhaustive Features Selector of the library mlxtend, that basically will combine the variables searching for the better combination result for the classifier, increasing the number of features. At the end, it will return the best accuracy obtained and the best combination of features.</p>
 					<span><img class="img-responsive img-fluid" alt="" src="images/image10.png" title=""></span>
+
+					<p class="mt-2">For improvements it could be used other hyperparams in the classifiers, tested other classifiers, use some neural network, or make use of ensemble methods. What I did here was use another strategy, that is the use a Feature Selector method, the Exhaustive Features Selector of the library mlxtend, that basically will combine the variables searching for the better combination result for the classifier, increasing the number of features. At the end, it will return the best accuracy obtained and the best combination of features.</p>
+					<span><img class="img-responsive img-fluid" alt="" src="images/image12.png" title=""></span>
 
 					<p class="mt-2">It takes a long time to run. I tried only to see the result of it with the maximum of 3 features. Then I made a new submission on Kaggle's competition and I obtained a score of 0.78229 and I moved up more than 1000 positions. It's really interesting how using the information of only 3 columns I obtained a better result then using 18, and probably if I had used more features using this Feature Selection algorithm, possibly I could obtain a better position in the competition.</p>
 					<span><img class="img-responsive img-fluid" alt="" src="images/image11.png" title=""></span>
