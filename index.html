@@ -19,7 +19,14 @@
 				<section class="mt-4">
 					<p>In this article we will see how to use machine learning to predict which passengers survived the Titanic shipwreck. You can see the code in further details on the <a href="https://github.com/eduardodsaraujo/TitanicMachineLearningFromDisaster/blob/master/Kaggle%20Competition%20-%20Titanic%20Machine%20Learning%20from%20Disaster.ipynb">link</a>.</p>
 					<p>It is a <a href="https://www.kaggle.com/c/titanic">Kaggle competition</a>, where we can access to two similar datasets that include passenger information like name, age, gender, socio-economic class, etc. Based on the patterns found in the train.csv data, the goal is to predict whether the other 418 passengers on board (found in test.csv) survived.</p>
-					<p>We can also look at the dataset and try answer some questions about it, like: - How many people survived in this accident? How many of them were male? Was the ticket class a significant factor in the passenger&#39;s survival?</p>
+					<p>We can also look at the dataset and try answer some questions about it, like:</p>
+
+						<ol>
+							<li>
+							How many people survived in this accident? </li>
+							<li>How many of them were male?</li>
+							<li> Was the ticket class a significant factor in the passenger&#39;s survival?</li>
+						</ol>
 					<p>First of all, we needed to import some libraries, to do the analysis and build our model.
 					<span><img class=" mt-2 img-responsive img-fluid" alt="" src="images/image3.png" title=""></span>
 				</section>
@@ -33,9 +40,18 @@
 				
 				<section class="mt-2">
 					<h3>Data Visualization</h3>
-					<p>Analysing the train data set, using libraries for data visualization (Seaborn and Matplotlib), we can see that from the 891 passengers only 342 survived. There was 577 men (with differents ages), but only 109 survived (19% of the total of men).</p>
+					
+					<h4>1) How many people survived in this accident?</h4>
+					<p>Analysing the train data set, using libraries for data visualization (Seaborn and Matplotlib), we can see that from the 891 passengers only 342 survived.
+
+					<div class="text-center"><img class="img-responsive img-fluid" alt="" src="images/image14.png" title=""></div>
+					
+					<h4>2) How many of the surviving passengers were male?</h4>
+					There was 577 men (with differents ages), but only 109 survived (19% of the total of men).</p>
 					
 					<div class="text-center"><img class="img-responsive img-fluid" alt="" src="images/image13.png" title=""></div>
+					
+					<h4>3) Was the ticket class a significant factor in the passenger&#39;s survival?</h4>
 					
 					<p>We can also note that the Class of the trip is also a really predictable variable. The most of passengers of Pclass 1 survived, while less than one third of the Pclass 3 survived. We can also observe that there are a concentration of passengers by age according to the Pclass too, there was a concentration of young people mainly in the Pclass 3, for example, and a concentration of old people in Pclass 1. It’s notable that this idea of saving first woman, old people and children can be observed in the visualizations.</p>
 					<div class="text-center"><img class="img-responsive img-fluid" alt="" src="images/image7.png" title=""></div>
@@ -64,7 +80,7 @@
 				
 				<section class="mt-2">
 					<h3 class="mt-2">Prediction</h3>
-					<p>Now we gonna make our submission file, with the predict of the test data using our best classifier, in this case, the GradientBoosting.</p>
+					<p>Now we gonna make our submission file, with the predict of the test data using our best classifier, in this case, the GradientBoosting, with its best params.</p>
 					<span><img class="img-responsive img-fluid" alt="" src="images/image8.png" title=""></span>
 				</section>
 				
